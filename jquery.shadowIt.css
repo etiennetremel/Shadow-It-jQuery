@@ -1,0 +1,25 @@
+.wShadow {
+	display:inline-block;
+}
+
+.wShadow>div {
+	clear:both;
+}
+
+.wShadow>div>div {
+	float:left;
+}
+
+.wShadow .title {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	font-style:italic;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size:13px;
+}
+
+.wShadow img {
+	vertical-align: bottom;
+	display: block;
+}

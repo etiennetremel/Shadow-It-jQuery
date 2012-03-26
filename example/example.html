@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Shadow It! - Example</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../jquery.shadowIt.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="../jquery.shadowIt.js"></script>  
+      
+		<script>
+			$(document).ready(function() {
+				$('.shadow').shadowIt({
+					
+				});
+				
+				$('.polaroid').shadowIt({
+					borderSize:	{
+						top:	10,
+						right:	10,
+						bottom:	50,
+						left:	10
+					},
+					useTitle:	true
+				});
+			});
+		</script>
+    
+    </head>
+    
+    <body>
+    	<h1>Shadow It!</h1>
+    	<p>Check the latest version on GitHub:<br /><a href="https://github.com/etiennetremel/Shadow-It-jQuery">https://github.com/etiennetremel/Shadow-It-jQuery</a></p>
+    	
+    	<h2>Original pictures</h2>
+    	<img src="my_image1.jpg" width="450px" /> <img src="my_image2.jpg" height="300px" />
+    	<div style="clear:both;" />
+    	<h2>Images with the new shadow</h2>
+    	<img src="my_image1.jpg" width="450px" class="shadow" /> <img src="my_image2.jpg" height="300px" class="shadow" />
+    	
+    	<h2>Images with the new shadow type polaroid</h2>
+    	<img src="my_image1.jpg" width="450px" class="polaroid" alt="Image 1" /> <img src="my_image2.jpg" height="300px" class="polaroid" alt="Image 2" />
+        
+        
+    </body>
+</html>
